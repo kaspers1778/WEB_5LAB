@@ -1,0 +1,28 @@
+<HTML>
+
+<HEAD>
+    <meta charset="utf-8">
+    <TITLE>ЛАБОРАТОРНА РОБОТА 4 </TITLE>
+    <script src="lab4JS.js"></script>
+</HEAD>
+
+<BODY>
+    <CENTER>
+        <p>Галерея малюнків</p>
+        <IMG src="p1.gif" width="180" name="pic1" alt="pic1" onclick="setImage(document.pic1)" onmouseover="loopImage(document.pic1)" onmouseout="unloopImage(document.pic1)"> 
+        <IMG src="p2.gif" width="180"name="pic2" alt="pic2" onclick="setImage(document.pic2)" onmouseover="loopImage(document.pic2)" onmouseout="unloopImage(document.pic2)">
+        <IMG src="p3.gif" width="180" name="pic3" alt="pic3" onclick="setImage(document.pic3)" onmouseover="loopImage(document.pic3)" onmouseout="unloopImage(document.pic3)"> <br>
+        <IMG scr="p4.img" width="180" name = "pic4" alt = "" onclick="setImage(document.pic4)" onmouseover="loopImage(document.pic4)" onmouseout="unloopImage(document.pic4)"> <br>
+        <FORM name=form1> Зображення з номерами<br>
+             <input type="text" name="a1" size=1> і 
+             <input type="text" name="a2" size=1> <P> 
+             <input type="button" value=" Переставити" onClick="chan(form1)">
+        </FORM><br>
+        <IMG src="menu1.png" width="180" name="menu1" alt="menu1" onmouseover="focusOnMenu(document.menu1)" onmouseout = "unfocusOnMenu(document.menu1)">
+        <IMG src="menu2.png" width="180" name="menu2" alt="menu2" onmouseover="focusOnMenu(document.menu2)" onmouseout = "unfocusOnMenu(document.menu2)">
+        <IMG src="menu3.png" width="180" name="menu3" alt="menu3" onmouseover="focusOnMenu(document.menu3)" onmouseout = "unfocusOnMenu(document.menu3)"> 
+
+    </CENTER>
+</BODY>
+
+</HTML>

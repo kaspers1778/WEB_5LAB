@@ -1,0 +1,35 @@
+<HTML>
+
+<HEAD>
+    <meta charset="utf-8">
+    <TITLE> ЛАБОРАТОРНА РАБОТА 2 </TITLE>
+    <script src="lab2JS.js"></script>
+</HEAD>
+
+<BODY>
+    <P>Площа прямокутного трикутника</P>
+    <FORM name="form1">
+        Основа: <input type="text" size=5 name="param1"><br> 
+        Висота: <input type="text" size=5 name="param2"><br> 
+        <input type="button" value = Обчислити onClick="document.form1.sol1.value = square(document.form1.param1.value,document.form1.param2.value)"><br> 
+        Площа прямокутного трикутника: <input type="text" size=5 name="sol1"><br><hr>
+        Cторона квадрата: <input type="text" size="7" name="num1" onchange="square_rec(form1)"><br>
+        Площа квадрата: <input type="text" size="7" name="sol2"><br>
+        <input type="reset" value = Оновити><br><hr>
+        X1:<input type="text" size = 5 name="x1"><br>
+        Y1:<input type="text" size = 5 name="y1"><br>
+        X2:<input type="text" size = 5 name="x2"><br>
+        Y2:<input type="text" size = 5 name="y2"><br>
+        X3:<input type="text" size = 5 name="x3"><br>
+        Y3:<input type="text" size = 5 name="y3"><br>
+        Площа трикутника по 3 координатам:<input type="text" size = 7 name= "sol3" onfocus="(document.form1.sol3.value = triangle(document.form1.x1.value,document.form1.y1.value,document.form1.x2.value,document.form1.y2.value,document.form1.x3.value,document.form1.y3.value))"><br><hr>
+        X: <input type = "text" size = 5 name="x" ><br>
+        Y: <input type="text" size="5" name="y"><br>
+        Відстань від початку координат: <input type="text" size="5" name="sol4" onselect="document.form1.sol4.value = distance(document.form1.x.value,document.form1.y.value)"><br><hr>
+        Перший: <input type="text" size="5" name="first" onblur="swap(form1)"><br>
+        Другий: <input type="text" size="5" name="second" onblur="swap(form1)"><br><hr>
+    </FORM>
+ 
+</BODY>
+
+</HTML

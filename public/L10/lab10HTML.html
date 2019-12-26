@@ -1,0 +1,40 @@
+<HTML>
+
+        <HEAD>
+            <meta charset="utf-8">
+            <TITLE>ЛАБОРАТОРНАЯ 10</TITLE>
+            <script src="lab10JS.js"></script>
+        </HEAD>
+        
+        <BODY>
+        <p>Підрахунок слів у тексті</p>
+        <FORM name='form1'>
+            Введіть текст:<br> <textarea id="text" cols="40" rows="5" onchange="countWords(document.form1)"></textarea><br>
+            Кількість слів : <input type="text" id='sol1'>
+        </FORM>
+        <hr>
+        <p>Заміна слів у тексті</p>
+        <FORM name='form2'>
+                Введіть текст:<br> <textarea id="text" cols="40" rows="5"></textarea><br>
+                Cлово яке заміняється: <input type="text" id='word1'><br>
+                Cлово на яке заміняється: <input type="text" id='word2'><br>
+                <input type="button" value="Замінити" onclick="changeWord(document.form2)">
+                <input type="reset"><br>
+                Змінений текст:<br> <textarea id="sol2" cols="40" rows="5"></textarea><br>
+        </FORM>
+        <hr>
+        <p>Заміна пробілів у тексті</p>
+        <FORM name='form3'>
+                Введіть текст:<br> <textarea id="text" cols="40" rows="5"></textarea><br>
+                <input type="button" value="Замінити" onclick="changeSpaces(document.form3)">
+                <input type="reset"><br>
+                Змінений текст:<br> <textarea id="sol3" cols="40" rows="5"></textarea><br>
+        </FORM>
+        <hr>
+
+
+
+
+        </BODY>
+        
+</HTML>

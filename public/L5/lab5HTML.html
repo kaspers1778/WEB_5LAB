@@ -1,0 +1,38 @@
+<HTML>
+
+<HEAD>
+    <meta charset="utf-8">
+    <TITLE>ЛАБОРАТОРНА РОБОТА 5 </TITLE>
+    <script src="lab5JS.js"></script>
+</HEAD>
+
+<BODY>
+    <FORM name="form1">
+        <b>Cтать:</b><br><input type="radio" name="sex" value = "Чоловік">Чоловік<br>
+        <input type = "radio" name="sex" value="Жінка">Жінка<br>
+        <input type="radio" name="sex" value = "Інше"> Cвій варіант: <input type= "text" name="other"><br>
+        <b>Вік: </b><input type="text"  size="5" name="howOld"><br>
+        <b>Cімейне положення: </b><br>
+        <input type="radio" name="family" value="Одружений/на">Одружений/на<br>
+        <input type="radio" name="family" value="Не одружений/на">Не одружений/на<br>
+        <input type="button" name="submit" value="Підтвердити" onclick="collectData(document.form1)">
+        <input type="reset"> 
+    </FORM>
+    <p>Данні занесені в анкету</p><br>
+    <div id='data'>
+    </div>
+    <hr>
+    <FORM name="form2">
+        <p>Керування розміром та положенням горизонтальної лінії :</p>
+        Висота: <input type="text" id='size' size="5"><br>
+        Довжина: <input type="text" id='width' size="5"><br>
+        Положення:<br>
+        <input type="radio" name='align' value='left'>Ліво<br>
+        <input type="radio" name='align' value='right'>Право<br>
+        <input type="button" value="Підвердити" onclick="changeHR(document.form2)">
+        <input type="reset">
+    </FORM>
+    <hr id='hr'>
+</BODY>
+
+</HTML>

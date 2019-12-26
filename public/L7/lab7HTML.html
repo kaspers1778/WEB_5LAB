@@ -1,0 +1,84 @@
+<HTML>
+
+        <HEAD>
+            <meta charset="utf-8">
+            <TITLE>ЛАБОРАТОРНАЯ 7</TITLE>
+            <script src="lab7JS.js"></script>
+        </HEAD>
+        
+        <BODY>
+            <p>Розмалювання таблиці</p>
+           <table border="1">
+               <tr>
+                   <td width = 70 height=70 id='1'></td>
+                   <td width = 70 height=70 id='2'></td>
+                   <td width = 70 height=70 id='3'></td>
+               </tr>
+               <tr>
+                    <td width = 70 height=70 id='4'></td>
+                    <td width = 70 height=70 id='5'></td>
+                    <td width = 70 height=70 id='6'></td>
+                </tr>
+                <tr>
+                   <td width = 70 height=70 id='7'></td>
+                   <td width = 70 height=70 id='8'></td>
+                   <td width = 70 height=70 id='9'></td>
+               </tr>
+           </table> <br>
+           <p>Клітина: </p>
+           <select id='cell'>
+                <option value='1'>1</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+                <option value='6'>6</option>
+                <option value='7'>7</option>
+                <option value='8'>8</option>
+                <option value='9'>9</option>
+            </select>
+           <p>Колір: </p>
+           <select id='color' oninput="paintCell(document)">
+               <option value='red'>Червоний</option>
+               <option value='orange'>Помаранчевий</option>
+               <option value='yellow'>Жовтий</option>
+               <option value='green'>Зелений</option>
+               <option value='blue'>Синій</option>
+               <option value='purple'>Фіолетовий</option>
+           </select>
+           <hr>
+           <p>Розрахунок вартості списку продуктів</p>
+           <FORM form1>
+           <table id='cart' border="1">
+               <tr>
+                   <td width = '200' height = '60'>Список товарів</td>
+                   <td width = '200' height = '60'>Корзина</td>
+               </tr>
+               <tr>
+                    <td width = '200' height = '200'>
+                        <select id='shop' size='9' style="width:100%;height:100%" onclick="getPrice(document.form1)">
+                            <option value="Хліб-5" >Хліб</option>
+                            <option value="Молоко-10" >Молоко</option>
+                            <option value="Каша-8" >Каша</option>
+                            <option value="Картопля-5" >Картопля</option>
+                            <option value="Яблуко-6" >Яблуко</option>
+                            <option value="Мандарин-12" >Мандарин</option>
+                            <option value="Йогурт-20">Йогурт</option>
+                            <option value="Сникерс-18" >Сникерс</option>
+                            <option value="Морозиво-15" >Морозиво</option>
+                            <option value="Горіхи-26" >Горіхи</option>
+                            <option value="Горох-6" >Горох</option>
+                            <option value="Пластівці-25" >Пластівці</option>
+                        </select>
+                    </td>
+                    <td width = '200' height = '200'><textarea style="width:100%;height:100%" id='toBuy'></textarea></td>
+               </tr>
+               <tr>
+                    <td width = '200' height = '60'></td>
+                    <td width = '200' height = '60'><textarea id='price' style="width:100%;height:100%"></textarea></td>
+                </tr>
+           </table>
+          </FORM>
+        </BODY>
+        
+        </HTML>

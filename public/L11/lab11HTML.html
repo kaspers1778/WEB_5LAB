@@ -1,0 +1,27 @@
+<HTML>
+
+    <HEAD>
+        <meta charset="utf-8">
+        <TITLE>ЛАБОРАТОРНАЯ 11</TITLE>
+        <script src="lab11JS.js"></script>
+    </HEAD>
+
+<BODY onLoad="mult()"> <img src="e1.png"> <br> <input type="button" name="But" value="Подивитись" onClick="s()">
+    <hr>
+ <p>Визначення кількості додатніх елементів массиву: </p>
+ <FORM name="form1">
+     Введіть елементи массиву : <input type="text" id="arr" size='40' onchange="countPozitive(document.form1)"><br>
+     Кількість додатніх елементів : <input type="text" id='sol1'>
+     <input type="reset">
+ </FORM>
+ <hr>
+ <p>Визначення найбільшого елементу массиву: </p>
+ <FORM name="form2">
+     Введіть елементи массиву : <input type="text" id="arr" size='40' onchange="getMax(document.form2)"><br>
+     Найбільший елемент : <input type="text" id='sol2'>
+     <input type="reset">
+ </FORM>
+ <hr>
+ </BODY>
+
+</HTML>

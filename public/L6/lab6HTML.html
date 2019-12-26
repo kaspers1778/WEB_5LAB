@@ -1,0 +1,33 @@
+<HTML>
+
+        <HEAD>
+            <meta charset="utf-8">
+            <TITLE>ЛАБОРАТОРНАЯ 6</TITLE>
+            <script src="lab6JS.js"></script>
+        </HEAD>
+        
+        <BODY>
+            <FORM name="form1">
+             Курс :<br>
+             <input type="checkbox" name='course' value='100'>Java Script<br>
+             <input type="checkbox" name='course' value='50'>CSS<br>
+             <input type="checkbox" name='course' value='25'>HTML<br>
+             Тривалість: <br>
+             <input type="checkbox" name='period' value='100'>3 тижня<br>
+             <input type="checkbox" name='period' value='50'>2 тижня<br>
+             <input type="checkbox" name='period' value='100'>1 тиждень<br>
+             Мова: <br>
+             <input type="checkbox" name='language' value='100'>Французька<br>
+             <input type="checkbox" name='language' value='50'>Англійська<br>
+             <input type="checkbox" name='language' value='100'>Українська<br>
+             Форма звітності: <br>
+             <input type="checkbox" name='study' value='100'>Денна<br>
+             <input type="checkbox" name='study' value='50'>Вечірня<br>
+             <input type="checkbox" name='study' value='25'>Заочна<br>
+             <input type="button" value="Розрахувати вартість" onclick="getPrice(document.form1)">
+             <input type="reset"><br>
+             <textarea id="output" cols="30" rows="1"></textarea>
+            </FORM>
+        </BODY>
+        
+        </HTML>

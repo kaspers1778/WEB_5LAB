@@ -1,0 +1,40 @@
+<HTML>
+
+<HEAD>
+    <meta charset="utf-8">
+    <TITLE> ЛАБОРАТОРНА РАБОТА 3 </TITLE>
+    <script src="lab3JS.js"></script>
+</HEAD>
+
+<BODY>
+    <p> Обчислення максимального значення з 3 чисел </p>
+    <FORM name="form1">
+         Число 1: <input type="text" size=8 name="num1"><br>
+         Число 2: <input type="text" size=8 name="num2"><br>
+         Число 3: <input type="text" size=8 name="num3"><br>
+         Максимальне значення = <input type="text" size=8 name="res"><br> <input type="button" value="Визначити" onClick="maxval(form1)"> 
+         <input type="reset"> <br><hr>
+        <p>Обчислення максимального значення з послідновності 5 чисел</p>
+        Числа: <input type="text" size="20" name="numbers"><br>
+        Максимальне з послідовності = <input type = "text" name = sol1><br>
+        <input type="button" value="Визначити" onclick=" document.form1.sol1.value = maxOf5(form1)">
+        <input type="reset"> <br><hr>
+        <p>Визначення можливості побудови трикутника з заданими сторонами</p>
+        Сторона 1:<input type="text" name="first"><br>
+        Сторона 2:<input type="text" name="second"><br>
+        Сторона 3:<input type="text" name="third"><br>
+        Чи можна побудувати трикутник?<input type="text" size="5" name="sol2"><br>
+        <input type="button" value= "Визначити" onclick="document.form1.sol2.value = checkTriangle(form1)">
+        <input type="reset"><br><hr>
+        <p>Визначення чверті якій належить точка</p>
+        X:<input type="text" name="x"><br>
+        Y:<input type="text" name="y"><br>
+        Чверть:<input type="text" size="35" name="sol3"><br>
+        <input type="button" value= "Визначити" onclick="document.form1.sol3.value = getQuater(form1)">
+        <input type="reset"><br><hr>
+
+
+    </FORM>
+</BODY>
+
+</HTML
